@@ -1,0 +1,75 @@
+{# src/HO/MemberBundle/Resources/views/Files/index.html.twig #}
+
+{% extends "HOMemberBundle::layout.html.twig" %}
+
+{% block homember_body %}
+
+<div class="container-fullwidth" style="font-family: Verdana; font-size: 16px;">
+  <div class="page-header">
+    <h1>Board</h1>
+  </div>
+
+  {% for message in app.session.flashbag.get('info') %}
+    <div class="alert alert-success" role="alert">
+        {{ message }}
+    </div>
+  {% endfor %}
+
+  <div class="row">
+  <div class="col-md-6">
+    <div class="panel panel-primary" style="border-color: #12484D;">
+            <div class="panel-heading" style="background-color: #12484D;">
+              <h3 class="panel-title">My account</h3>
+            </div>
+            <div class="panel-body" style="height: 130px;">
+              <a href="#">My orders</a><br />
+              <a href="#">My account</a>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-6">
+          <div class="panel panel-primary" style="border-color: #12484D;">
+            <div class="panel-heading" style="background-color: #12484D;">
+              <h3 class="panel-title">After-sales service</h3>
+            </div>
+            <div class="panel-body" style="height: 130px;">
+              We assure you quality after-sales services wit our best team members ready to help you.
+              Just call 06.41.37.21.17 for anything disturbing you. May this be a real problem or just a little wonder.
+            </div>
+          </div>
+    </div>
+    </div>
+
+  <div class="row">
+  <div class="col-md-6">
+    <div class="panel panel-primary" style="border-color: #12484D;">
+            <div class="panel-heading" style="background-color: #12484D;">
+              <h3 class="panel-title">Documentations</h3>
+            </div>
+            <div class="panel-body" style="height: 130px;">
+            {% for doc in docs %}
+              {{ doc.name }} - <a href="http://localhost/homeon/web/documentation/{{ doc.link }}">Download</a>
+            {% endfor %}
+            </div>
+          </div>
+    </div>
+    <div class="col-md-6">
+          <div class="panel panel-primary" style="border-color: #12484D;">
+            <div class="panel-heading" style="background-color: #12484D;">
+              <h3 class="panel-title">Softwares</h3>
+            </div>
+            <div class="panel-body" style="height: 130px;">
+              {% for soft in softs %}
+                {{ soft.name }} - <a href="http://localhost/homeon/web/softwares/{{ soft.link }}">Download</a>
+              {% endfor %}
+            </div>
+          </div>
+    </div>
+  </div>
+
+
+
+  </div>
+  
+
+{% endblock %}

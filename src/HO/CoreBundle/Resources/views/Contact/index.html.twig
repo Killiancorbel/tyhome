@@ -1,0 +1,25 @@
+{# src/HO/CoreBundle/Resources/views/Contact/index.html.twig #}
+
+{% extends "HOCoreBundle::layout.html.twig" %}
+
+{% block title %}
+  Contact - {{ parent() }}
+{% endblock %}
+
+{% block hocore_body %}
+
+  <div class="page-header">
+    <h1>Contact us</h1>
+  </div>
+
+  {% for message in app.session.flashbag.get('info') %}
+    <div class="alert alert-success" role="alert">
+        {{ message }}
+    </div>
+  {% endfor %}
+
+  <div class="well">
+    {{ form(form) }}
+  </div>
+
+{% endblock %}

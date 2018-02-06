@@ -1,0 +1,21 @@
+{# src/HO/AdminBundle/Resources/views/Homepage/edit.html.twig #}
+
+{% extends "HOAdminBundle::layout_manage.html.twig" %}
+
+{% block hoadmin_body %}
+
+<div class="page-header">
+	<h1>Edit homepage</h1>
+</div>
+
+{% for message in app.session.flashbag.get('info') %}
+    <div class="alert alert-success" role="alert">
+        {{ message }}
+    </div>
+  {% endfor %}
+
+
+<div class="well">
+	{{ form(form) }}
+</div>
+{% endblock %}

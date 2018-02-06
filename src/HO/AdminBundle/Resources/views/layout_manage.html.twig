@@ -1,0 +1,31 @@
+{# src/HO/AdminBundle/Resources/views/layout.html.twig #}
+
+{% extends "::layout.html.twig" %}
+
+{% block title %}
+  Admin - {{ parent() }}
+{% endblock %}
+
+{% block body %}
+</div>
+<div class="container-fullwidth">
+
+<div class="row">
+<div class="col-md-1">
+</div>
+      <div id="menu" class="col-md-2" style="margin-left: -5%;">
+        <h3>Manage Website</h3>
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="{{ path('ho_product_list') }}">Products</a></li>
+          <li><a href="{{ path('ho_homepage_edit') }}">Homepage</a></li>
+          <li><a href="{{ path('ho_files_list') }}">Softwares & Documentation</a></li>
+        </ul>
+      </div>
+      <div id="content" class="col-md-7">
+        {% block hoadmin_body %}
+        {% endblock %}
+      </div>
+    </div>
+
+
+{% endblock %}

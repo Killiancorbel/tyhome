@@ -1,0 +1,73 @@
+ho_admin_list:
+    path:     /list-clients
+    defaults: { _controller: HOAdminBundle:Client:list }
+
+ho_client_add:
+    path:    /add-client
+    defaults: { _controller: HOAdminBundle:Client:add }
+
+ho_product_list:
+    path:    /list-products
+    defaults: { _controller: HOAdminBundle:Manage:listProduct }
+
+ho_product_add:
+    path:    /add-product
+    defaults: { _controller: HOAdminBundle:Manage:addProduct }
+
+ho_product_edit:
+    path:    /edit-product/{id}
+    defaults:
+      _controller: HOAdminBundle:Manage:editProduct
+    requirements:
+      id: \d
+
+ho_product_delete:
+    path:    /delete-product/{id}
+    defaults:
+      _controller: HOAdminBundle:Manage:deleteProduct
+    requirements:
+      id: \d
+
+ho_homepage_edit:
+    path:    /edit-homepage
+    defaults: { _controller: HOAdminBundle:Homepage:home }
+
+ho_files_list:
+    path:    /list-files
+    defaults: { _controller: HOAdminBundle:Member:list }
+
+ho_documentation_add:
+    path:    /add-documentation
+    defaults: { _controller: HOAdminBundle:Member:addDoc }
+
+ho_documentation_edit:
+    path:    /edit-documentation/{id}
+    defaults:
+      _controller: HOAdminBundle:Member:editDoc
+    requirements:
+      id: \d
+
+ho_documentation_delete:
+    path:    /delete_documentation/{id}
+    defaults:
+      _controller: HOAdminBundle:Member:deleteDoc
+    requirements:
+      id: \d
+
+ho_software_add:
+    path:    /add_software
+    defaults: { _controller: HOAdminBundle:Member:addSoft }
+
+ho_software_edit:
+    path:    /edit-software/{id}
+    defaults:
+      _controller: HOAdminBundle:Member:editSoft
+    requirements:
+      id: \d
+
+ho_software_delete:
+    path:    /delete-software/{id}
+    defaults:
+      _controller: HOAdminBundle:Member:deleteSoft
+    requirements:
+      id: \d

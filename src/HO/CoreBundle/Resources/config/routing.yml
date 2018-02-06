@@ -1,0 +1,7 @@
+ho_core_homepage:
+    path:     /home
+    defaults: { _controller: HOCoreBundle:Home:home }
+
+ho_contact_main:
+    path:    /contact
+    defaults: { _controller: HOCoreBundle:Contact:index }

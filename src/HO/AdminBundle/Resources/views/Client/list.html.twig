@@ -1,0 +1,51 @@
+{# src/HO/AdminBundle/Resources/views/Home/list.html.twig #}
+
+{% extends "HOAdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Clients - {{ parent() }}
+{% endblock %}
+
+{% block hoadmin_body %}
+
+  <div class="page-header">
+    <h1>Our clients</h1>
+  </div>
+
+  {% for message in app.session.flashbag.get('info') %}
+    <div class="alert alert-success" role="alert">
+        {{ message }}
+    </div>
+  {% endfor %}
+
+  <a class="btn btn-success" href="{{ path('ho_client_add') }}" style="margin-bottom: 10px;"><i class="glyphicon glyphicon-plus" style="margin-right: 6px;"></i>Add a client</a>
+
+  <div class="container">
+    <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Company</th>
+                <th>Mail</th>
+                <th>TVA</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for client in clients %}
+              <tr>
+                <td>{{ client.id }}</td>
+                <td>{{ client.forename }}</td>
+                <td>{{ client.name }}</td>
+                <td>{{ client.company }}</td>
+                <td>{{ client.user.username }}</td>
+                <td>{{ client.numeroTVA }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+  </div>
+  
+
+{% endblock %}

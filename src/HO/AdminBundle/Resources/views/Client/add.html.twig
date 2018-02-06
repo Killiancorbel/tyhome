@@ -1,0 +1,22 @@
+{# src/HO/AdminBundle/Resources/views/Home/add.html.twig #}
+
+{% extends "HOAdminBundle::layout.html.twig" %}
+
+{% block title %}
+  Clients - {{ parent() }}
+{% endblock %}
+
+{% block hoadmin_body %}
+
+  <div class="page-header">
+    <h1>Add client</h1>
+  </div>
+
+  <a class="btn btn-default" href="{{ path('ho_admin_list') }}" style="margin-bottom: 10px;"><i class="glyphicon glyphicon-chevron-left" style="margin-right: 6px;"></i>Back to list</a>
+
+  <div class="well">
+    {{ form(form) }}
+  </div>
+  
+
+{% endblock %}

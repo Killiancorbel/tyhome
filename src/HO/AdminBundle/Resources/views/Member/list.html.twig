@@ -1,0 +1,81 @@
+{# src/HO/AdminBundle/Resources/views/Member/list.html.twig #}
+
+{% extends "HOAdminBundle::layout_manage.html.twig" %}
+
+{% block hoadmin_body %}
+
+<div class="container-fullwidth">
+  <div class="page-header">
+    <h1>Files</h1>
+  </div>
+
+  {% for message in app.session.flashbag.get('info') %}
+    <div class="alert alert-success" role="alert">
+        {{ message }}
+    </div>
+  {% endfor %}
+
+  
+<a class="btn btn-success" href="{{ path('ho_documentation_add') }}" style="margin-bottom: 10px;">Add Documentation</a>
+
+    {% if docs != null %}  
+    <table class="table table">
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Name of the file</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for doc in docs %}
+              <tr>
+                <td>{{ doc.name }}</td>
+                <td>{{ doc.link }}</td>
+                <td><a href="{{ path('ho_documentation_edit', {'id': doc.id}) }}" class="btn btn-warning">Edit</a></td>
+                <td><a href="{{ path('ho_documentation_delete', {'id': doc.id}) }}" class="btn btn-danger">Delete</a></td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+      {% else %}
+        <div class="alert alert-info" role="alert">
+          No Documentation yet
+        </div>
+      {% endif %}
+
+      <a class="btn btn-success" href="{{ path('ho_software_add') }}" style="margin-top: 20px; margin-bottom: 10px;">Add Software</a>
+
+      {% if softs != null %}
+      <table class="table table">
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Name of the file</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for soft in softs %}
+              <tr>
+                <td>{{ soft.name }}</td>
+                <td>{{ soft.link }}</td>
+                <td><a href="{{ path('ho_software_edit', {'id': soft.id}) }}" class="btn btn-warning">Edit</a></td>
+                <td><a href="{{ path('ho_software_delete', {'id': soft.id}) }}" class="btn btn-danger">Delete</a></td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+          {% else %}
+            <div class="alert alert-info" role="alert">
+              No Softwares yet
+            </div>
+          {% endif %}
+
+
+  </div>
+  
+
+{% endblock %}

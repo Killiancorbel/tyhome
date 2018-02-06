@@ -1,0 +1,3 @@
+ho_member_homepage:
+    path:     /
+    defaults: { _controller: HOMemberBundle:Member:index }

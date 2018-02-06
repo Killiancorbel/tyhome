@@ -1,0 +1,21 @@
+{# src/HO/AdminBundle/Resources/views/Member/addSoft.html.twig #}
+
+{% extends "HOAdminBundle::layout_manage.html.twig" %}
+
+{% block hoadmin_body %}
+
+<div class="page-header">
+	<h1>Add Software</h1>
+</div>
+
+<div class="alert alert-info" role="alert"><i class="glyphicon glyphicon-exclamation-sign"></i>
+	Don't forget the associated file in /web/softwares
+	</div>
+
+<a href="{{ path('ho_files_list') }}" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i>Retour à la liste</a>
+
+<div class="well">
+	{{ form(form) }}
+</div>
+
+{% endblock %}

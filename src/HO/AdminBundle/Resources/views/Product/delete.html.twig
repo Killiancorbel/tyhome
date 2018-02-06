@@ -1,0 +1,22 @@
+{# src/HO/AdminBundle/Resources/views/Product/delete.html.twig #}
+
+{% extends "HOAdminBundle::layout_manage.html.twig" %}
+
+{% block hoadmin_body %}
+
+<div class="page-header">
+	<h1>Delete Product</h1>
+</div>
+
+<div class="well">
+	<p>
+		Are you sure you want to delete "{{ product.name }}" ?
+	</p>
+	<form action="{{ path('ho_product_delete', {'id': product.id}) }}" method='POST'>
+	<a href="{{ path('ho_product_list') }}" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i>Retour à la liste</a>
+	<input type="submit" value="Delete" class="btn btn-danger" />
+	{{ form_rest(form) }}
+	</form>
+</div>
+
+{% endblock %}

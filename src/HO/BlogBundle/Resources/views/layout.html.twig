@@ -1,0 +1,12 @@
+{# src/HO/BlogBundle/Resources/views/layout.html.twig #}
+
+{% extends "::layout.html.twig" %}
+
+{% block title %}
+  Blog - {{ parent() }}
+{% endblock %}
+
+{% block body %}
+		{% block hoblog_body %}
+        {% endblock %}
+{% endblock %}

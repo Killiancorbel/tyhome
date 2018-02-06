@@ -1,0 +1,50 @@
+{# src/HO/AdminBundle/Resources/views/Product/list.html.twig #}
+
+{% extends "HOAdminBundle::layout_manage.html.twig" %}
+
+{% block hoadmin_body %}
+
+<div class="container-fullwidth">
+  <div class="page-header">
+    <h1>Products</h1>
+  </div>
+
+  {% for message in app.session.flashbag.get('info') %}
+    <div class="alert alert-success" role="alert">
+        {{ message }}
+    </div>
+  {% endfor %}
+
+  <a class="btn btn-success" href="{{ path('ho_product_add') }}"><i class="glyphicon glyphicon-plus" style="margin-right: 4px;"></i>Add Product</a>
+
+  
+    <table class="table table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Product</th>
+                <th>Price</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for product in products %}
+              <tr>
+                <td><img src="{{ product.image }}" alt="product image" width="150" height="100" /></td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.price }}€</td>
+                <td><a class="btn btn-warning" href="{{ path('ho_product_edit', {'id': product.id}) }}"><i class="glyphicon glyphicon-pencil" style="margin-right: 4px;"></i>Edit</a></td>
+                <td><a class="btn btn-danger" href="{{ path('ho_product_delete', {'id': product.id}) }}"><i class="glyphicon glyphicon-trash" style="margin-right: 4px;"></i>Delete</a></td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+
+
+      <div class="well">
+        Nos produits comprennent une license d'utilisation, la documentation disponible en ligne, ainsi qu'un service après vente
+      </div>
+  </div>
+  
+
+{% endblock %}

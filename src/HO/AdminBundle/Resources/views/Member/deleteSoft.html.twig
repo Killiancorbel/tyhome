@@ -1,0 +1,27 @@
+{# src/HO/AdminBundle/Resources/views/Member/deleteSoft.html.twig #}
+
+{% extends "HOAdminBundle::layout_manage.html.twig" %}
+
+{% block hoadmin_body %}
+
+<div class="page-header">
+	<h1>Delete Software</h1>
+</div>
+
+<div class="alert alert-info" role="alert"><i class="glyphicon glyphicon-exclamation-sign"></i>
+	Don't forget the associated file in /web/softwares
+	</div>
+
+<div class="well">
+	<p>
+		Are you sure you want to delete "{{ soft.name }}" ?
+	</p>
+
+	<form action="{{ path('ho_software_delete', {'id': soft.id}) }}" method='POST'>
+	<a href="{{ path('ho_files_list') }}" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i>Retour à la liste</a>
+	<input type="submit" value="Delete" class="btn btn-danger" />
+	{{ form_rest(form) }}
+	</form>
+</div>
+
+{% endblock %}
