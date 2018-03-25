@@ -21,7 +21,7 @@
             <div class="panel-heading" style="background-color: #12484D;">
               <h3 class="panel-title">My account</h3>
             </div>
-            <div class="panel-body" style="height: 130px;">
+            <div class="panel-body" style="height: 140px;">
               <a href="#">My orders</a><br />
               <a href="#">My account</a>
             </div>
@@ -32,9 +32,10 @@
             <div class="panel-heading" style="background-color: #12484D;">
               <h3 class="panel-title">After-sales service</h3>
             </div>
-            <div class="panel-body" style="height: 130px;">
+            <div class="panel-body" style="height: 140px;">
               We assure you quality after-sales services wit our best team members ready to help you.
-              Just call 06.41.37.21.17 for anything disturbing you. May this be a real problem or just a little wonder.
+              Just call 06.41.37.21.17 for anything disturbing you. May this be a real problem or just a little wonder.<br />
+                We are also available at <a href="mailto:contact@tyhome.co">contact@tyhome.co</a>
             </div>
           </div>
     </div>
@@ -46,9 +47,9 @@
             <div class="panel-heading" style="background-color: #12484D;">
               <h3 class="panel-title">Documentations</h3>
             </div>
-            <div class="panel-body" style="height: 130px;">
+            <div class="panel-body" style="height: 140px;">
             {% for doc in docs %}
-              {{ doc.name }} - <a href="http://localhost/homeon/web/documentation/{{ doc.link }}">Download</a>
+              {{ doc.name }} - <a href="http://localhost:8888/documentation/{{ doc.link }}">Download</a>
             {% endfor %}
             </div>
           </div>
@@ -58,9 +59,9 @@
             <div class="panel-heading" style="background-color: #12484D;">
               <h3 class="panel-title">Softwares</h3>
             </div>
-            <div class="panel-body" style="height: 130px;">
+            <div class="panel-body" style="height: 140px;">
               {% for soft in softs %}
-                {{ soft.name }} - <a href="http://localhost/homeon/web/softwares/{{ soft.link }}">Download</a>
+                {{ soft.name }} - <a href="http://localhost:8888/softwares/{{ soft.link }}">Download</a>
               {% endfor %}
             </div>
           </div>

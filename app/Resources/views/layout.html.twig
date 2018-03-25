@@ -6,21 +6,75 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% block title %}TyHome{% endblock %}</title>
+  <title>{% block title %}Nootty{% endblock %}</title>
 
   {% block stylesheets %}
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+      <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
   {% endblock %}
 </head>
 
-<body style="background-color: #EFEFEF;">
-  <div class="container-fullwidth">
-    <div id="header" class="jumbotron" style="background-color: #DCB56E;">
-      <img src="{{ asset('Images/Logo_baniere.png') }}" width="20%" height="100%" />
+<body>
+  <div class="container-fluid">
+    <div class="row">
+    <div id="header" class="video">
+      <div id="menu">
+          <div class="col-md-1"></div>
+          <div class="col-md-2">
+            <img src="{{ asset('Images/logo_white.png') }}" />
+          </div>
+          <div class="col-md-5"></div>
+          <div class="col-md-1 headLink">Produit</div>
+          <div class="col-md-1 headLink">Nootty</div>
+          <div class="col-md-1 headLink">Contact</div>
+      </div>
+      <img src="{{ asset('Images/temp_background.png') }}" style="visibility: hidden" />
     </div>
-</div>
-<div class="container">
-<nav class="navbar navbar-inverse" style="margin-top: -30px; background-color: #12484D;">
+    </div>
+      {% block body %}
+      {% endblock %}
+
+    <div class="row">
+      <div id="footer" class="col-md-12">
+          <div class="row">
+              <div class="col-md-4">
+                <h1 id="footerTitle">Contact</h1>
+              </div>
+          </div>
+
+          <div class="row" style="margin-top: 60px;">
+              <div class="col-md-12" style="text-align: center">
+                  <input type="text" name="name" class="footerInputText" placeholder="Votre nom" />
+              </div>
+          </div>
+
+          <div class="row" style="margin-top: 40px;">
+              <div class="col-md-12" style="text-align: center">
+                  <input type="text" name="email" class="footerInputText" placeholder="Votre adresse mail" />
+              </div>
+          </div>
+
+          <div class="row" style="margin-top: 40px;">
+              <div class="col-md-12" style="text-align: center">
+                  <textarea rows="4" type="text" name="message" class="footerInputTextarea" placeholder="Entrez votre message">
+                  </textarea>
+              </div>
+          </div>
+          <div class="row" style="margin-top: 40px;">
+              <div class="col-md-12" >
+                  <div id="buttonContainer">
+                    <button id="homeContactButton" type="submit">Envoyer le message</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+      <div class="row" id="homeBanner">
+          <img src="{{ asset('Images/home_banner.png') }}" style="visibility: hidden;" />
+      </div>
+  </div>
+<!-- <nav class="navbar navbar-inverse" style="margin-top: -30px; background-color: #12484D;">
         <div class="container">
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -28,30 +82,34 @@
               <li><a href="{{ path('ho_blog_index') }}" style="color: #EFEFEF;">Blog</a></li>
               <li><a href="{{ path('ho_shop_main') }}" style="color: #EFEFEF;">Shop</a></li>
               <li><a href="{{ path('ho_contact_main') }}" style="color: #EFEFEF;">Contact</a></li>
-              <li><a href="#" style="color: #EFEFEF;">Membership</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: #EFEFEF;">Admin <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Clients</a></li>
-                  <li><a href="#">Board</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Manage website</a></li>
-                </ul>
+                {% if app.user %}
+                <li><a href="{{ path('ho_member_homepage') }}" style="color: #EFEFEF;">Membership</a></li>
+                {% endif %}
+                {% if is_granted('ROLE_ADMIN') %}
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: #EFEFEF;">Admin <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="{{ path('ho_admin_list') }}">Clients</a></li>
+                    <li><a href="#">Commandes</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="{{ path('ho_product_list') }}">Manage website</a></li>
+                  </ul>
+                </li>
+              {% endif %}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li style="margin-right: 20px; color: #EFEFEF;">
+                  {% if app.user %}
+                    <a href="{{ path('logout') }}">Logout</a>
+                  {% else %}
+                    <a href="{{ path('login') }}">Login</a>
+                  {% endif %}
               </li>
             </ul>
-          </div><!--/.nav-collapse -->
+          </div>
         </div>
-      </nav>
+      </nav>-->
 
-
-    {% block body %}
-    {% endblock %}
-
-</div><div class="container-fullwidth">
-    <footer class="well well-sm" style="margin-bottom: 0px; margin-top: 20px; text-align: center;">
-      <p>By Rodolphe Dugueperoux, Pierrick Fabry, Pierrick Briand, Nils Duflo, Antoine Danibo, Quentin Quero, Quentin Drack and Killian Corbel.</p>
-    </footer>
-  </div>
 
   {% block javascripts %}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

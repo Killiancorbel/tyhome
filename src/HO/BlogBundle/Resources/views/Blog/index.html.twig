@@ -10,7 +10,9 @@
     </div>
   {% endfor %}
 
-  <a class="btn btn-success" style="margin-top: 10px;" href="{{ path('ho_blog_add') }}"><i class="glyphicon glyphicon-pencil" style="margin-right: 4px;"></i>Write an article</a>
+    {% if is_granted('ROLE_ADMIN') %}
+        <a class="btn btn-success" style="margin-top: 10px;" href="{{ path('ho_blog_add') }}"><i class="glyphicon glyphicon-pencil" style="margin-right: 4px;"></i>Write an article</a>
+    {% endif %}
 
   {% if articles != null %}
   {% for article in articles %}

@@ -3,7 +3,7 @@
 {% extends "HOCoreBundle::layout.html.twig" %}
 
 {% block title %}
-  Home - {{ parent() }}
+  {{ parent() }}
 {% endblock %}
 
 {% block hocore_body %}
@@ -12,17 +12,61 @@
     <div class="alert alert-success" role="alert">
         {{ message }}
     </div>
-  {% endfor %}
+{% endfor %}
+  <div class="row">
+    <div class="col-md-12" id="homeContainer">
 
-  <div class="page-header">
-    <h1>Presentation</h1>
+      <h1 id="homeTitle">Nootty</h1>
+
+      <p id="homeContent">
+          {{ content|raw }}
+      </p>
+
+      <div class="col-md-4">
+        <div class="homeImgContainer">
+          <img src="{{ asset('Images/home_imagine.png') }}" />
+          <h3 class="homeImgTitle">Imaginer</h3>
+          <p class="homeImgText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper porta dui, vel blandit ligula fermentum</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="homeImgContainer">
+          <img src="{{ asset('Images/home_create.png') }}" />
+          <h3 class="homeImgTitle">Créer</h3>
+          <p class="homeImgText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper porta dui, vel blandit ligula fermentum</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="homeImgContainer">
+          <img src="{{ asset('Images/home_customize.png') }}" />
+          <h3 class="homeImgTitle">Personnaliser</h3>
+          <p class="homeImgText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper porta dui, vel blandit ligula fermentum</p>
+        </div>
+      </div>
+
+      <div class="col-md-4" style="margin-top: 30px;">
+        <div class="homeImgContainer">
+          <img src="{{ asset('Images/home_interact.png') }}" />
+          <h3 class="homeImgTitle">Intéragir</h3>
+          <p class="homeImgText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper porta dui, vel blandit ligula fermentum</p>
+        </div>
+      </div>
+      <div class="col-md-4" style="margin-top: 30px;">
+        <div style="width: 215px; margin: 0 auto">
+          <img src="{{ asset('Images/logo_black.png') }}" />
+        </div>
+      </div>
+      <div class="col-md-4" style="margin-top: 30px;">
+        <div class="homeImgContainer">
+          <img src="{{ asset('Images/home_feel.png') }}" />
+          <h3 class="homeImgTitle">Ressentir</h3>
+          <p class="homeImgText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper porta dui, vel blandit ligula fermentum</p>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="well">
-      {{ content|raw }}
-  </div>
-
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+  <!--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
         <ol class="carousel-indicators">
           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -47,6 +91,6 @@
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div>
+      </div>-->
 
 {% endblock %}

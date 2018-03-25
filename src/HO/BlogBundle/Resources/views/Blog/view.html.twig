@@ -8,11 +8,13 @@
     </div>
   {% endfor %}
 
-  <div class="row">
-  <a href="{{ path('ho_blog_index') }}" class="btn btn-primary" style="margin-top: 20px; margin-right: 10px;"><i class="glyphicon glyphicon-chevron-left" style="margin-right: 5px;"></i>Retour à la liste</a>
-  <a href="{{ path('ho_blog_edit', {'id': article.id}) }}" class="btn btn-warning" style="margin-top: 20px; margin-right: 10px;"><i class="glyphicon glyphicon-pencil" style="margin-right: 5px;"></i>Edit</a>
-  <a href="{{ path('ho_blog_delete', {'id': article.id}) }}" class="btn btn-danger" style="margin-top: 20px;"><i class="glyphicon glyphicon-trash" style="margin-right: 5px;"></i>Delete</a>
-  </div>
+    {% if is_granted('ROLE_ADMIN') %}
+    <div class="row">
+    <a href="{{ path('ho_blog_index') }}" class="btn btn-primary" style="margin-top: 20px; margin-right: 10px;"><i class="glyphicon glyphicon-chevron-left" style="margin-right: 5px;"></i>Retour à la liste</a>
+    <a href="{{ path('ho_blog_edit', {'id': article.id}) }}" class="btn btn-warning" style="margin-top: 20px; margin-right: 10px;"><i class="glyphicon glyphicon-pencil" style="margin-right: 5px;"></i>Edit</a>
+    <a href="{{ path('ho_blog_delete', {'id': article.id}) }}" class="btn btn-danger" style="margin-top: 20px;"><i class="glyphicon glyphicon-trash" style="margin-right: 5px;"></i>Delete</a>
+    </div>
+    {% endif %}
 
 <div class="page-header"><h1>{{ article.title }}</h1></div>
 
