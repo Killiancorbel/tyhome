@@ -4,4 +4,4 @@ ho_core_homepage:
 
 ho_contact_main:
     path:    /contact
-    defaults: { _controller: HOCoreBundle:Contact:index }
+    defaults: { _controller: HOCoreBundle:Home:contact }

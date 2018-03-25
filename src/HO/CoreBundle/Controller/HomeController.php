@@ -3,6 +3,7 @@
 namespace HO\CoreBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use HO\CoreBundle\Entity\Content;
 use HO\CoreBundle\Entity\Video;
@@ -26,7 +27,14 @@ class HomeController extends Controller
         	'video3' => $video3));
     }
 
-    public function contactAction() {
+    public function contactAction(Request $request) {
+        $data = $request->request->all();
+        $name = $data['form']['name'];
+        $email = $data['form']['email'];
+        $message = $data['form']['message'];
 
+        mail('killian.corbel@gmail.com', 'Message de ' . $name . ' - ' . $email, $message);
+        $request->getSession()->getFlashBag()->add('info', 'Votre mail a bien été envoyé, nous reviendrons vers vous le plus vite possible');
+        return $this->redirectToRoute('ho_core_homepage');
     }
 }
