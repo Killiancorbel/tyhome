@@ -51,6 +51,7 @@ class HomeController extends Controller
 
             //Recipients
             $mail->setFrom($email, 'Mailer');
+            $mail->addAddress('killian.corbel@gmail.com');
                              // Set email format to HTML
             $mail->Subject = 'New message from ' . $name;
             $mail->Body    = $message;
