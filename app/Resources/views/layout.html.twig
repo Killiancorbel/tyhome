@@ -18,18 +18,22 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-    <div id="header" class="video">
+    <div id="header">
+        <div class='vid'>
+            <video autoplay loop muted>
+                <source src="{{ asset('Videos/nootty.mp4') }}" type="video/mp4">
+            </video>
+        </div>
       <div id="menu">
           <div class="col-md-1"></div>
           <div class="col-md-2">
             <img src="{{ asset('Images/logo_white.png') }}" />
           </div>
           <div class="col-md-5"></div>
-          <div class="col-md-1 headLink">Produit</div>
-          <div class="col-md-1 headLink">Nootty</div>
-          <div class="col-md-1 headLink">Contact</div>
+          <div class="col-md-1 headLink"></div>
+          <div class="col-md-1 headLink"><a href="#homeTitle">Nootty</a></div>
+          <div class="col-md-1 headLink"><a href="#footerTitle">Contact</a></div>
       </div>
-      <img src="{{ asset('Images/temp_background.png') }}" style="visibility: hidden" />
     </div>
     </div>
       {% block body %}
@@ -57,8 +61,7 @@
 
           <div class="row" style="margin-top: 40px;">
               <div class="col-md-12" style="text-align: center">
-                  <textarea rows="4" type="text" name="message" class="footerInputTextarea" placeholder="Entrez votre message">
-                  </textarea>
+                  <textarea rows="4" type="text" name="message" class="footerInputTextarea" placeholder="Entrez votre message"></textarea>
               </div>
           </div>
           <div class="row" style="margin-top: 40px;">
@@ -71,7 +74,7 @@
       </div>
     </div>
       <div class="row" id="homeBanner">
-          <img src="{{ asset('Images/home_banner.png') }}" style="visibility: hidden;" />
+          <img src="{{ asset('Images/home_banner.png') }}" style="visibility: hidden;" height="200px" />
       </div>
   </div>
 <!-- <nav class="navbar navbar-inverse" style="margin-top: -30px; background-color: #12484D;">
@@ -114,6 +117,9 @@
   {% block javascripts %}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <script type="application/javascript">
+
+      </script>
   {% endblock %}
 
 </body>
