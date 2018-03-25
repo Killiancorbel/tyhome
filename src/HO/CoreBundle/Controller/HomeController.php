@@ -2,6 +2,7 @@
 
 namespace HO\CoreBundle\Controller;
 
+use HO\CoreBundle\Entity\Message;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -35,6 +36,15 @@ class HomeController extends Controller
         $message = $data['message'];
 
         mail('killian.corbel@gmail.com', 'Message de ' . $name . ' - ' . $email, $message);
+
+        $messageEnt = new Message();
+        $messageEnt->setName($name);
+        $messageEnt->setEmail($email);
+        $messageEnt->setMessage($message);
+        $em = $this->getDoctrine()->getManager();
+        $em->persist($messageEnt);
+        $em->flush();
+
         $request->getSession()->getFlashBag()->add('info', 'Votre mail a bien été envoyé, nous reviendrons vers vous le plus vite possible');
         return $this->redirectToRoute('ho_core_homepage');
 
