@@ -8,13 +8,14 @@
 
 {% block hocore_body %}
 
-{% for message in app.session.flashbag.get('info') %}
-    <div class="alert alert-success" role="alert">
-        {{ message }}
-    </div>
-{% endfor %}
   <div class="row">
     <div class="col-md-12" id="homeContainer">
+
+        {% for message in app.session.flashbag.get('info') %}
+          <div class="alert alert-success" role="alert" style="margin-top: 20px; margin-bottom: 20px;">
+              {{ message }}
+          </div>
+        {% endfor %}
 
       <h1 id="homeTitle">Nootty</h1>
 

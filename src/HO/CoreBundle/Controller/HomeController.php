@@ -7,6 +7,9 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use HO\CoreBundle\Entity\Content;
 use HO\CoreBundle\Entity\Video;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
 
 class HomeController extends Controller
 {
@@ -33,8 +36,31 @@ class HomeController extends Controller
         $email = $data['email'];
         $message = $data['message'];
 
-        mail('killian.corbel@gmail.com', 'Message de ' . $name . ' - ' . $email, $message);
-        $request->getSession()->getFlashBag()->add('info', 'Votre mail a bien été envoyé, nous reviendrons vers vous le plus vite possible');
-        return $this->redirectToRoute('ho_core_homepage');
+
+        $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
+        try {
+            //Server settings
+            $mail->SMTPDebug = 2;                                 // Enable verbose debug output
+            $mail->isSMTP();                                      // Set mailer to use SMTP
+            $mail->Host = 'localhost';                            // Specify main and backup SMTP servers
+            $mail->SMTPAuth = true;                               // Enable SMTP authentication
+            $mail->Username = 'root';                             // SMTP username
+            $mail->Password =  null;                           // SMTP password
+            $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+            $mail->Port = 587;                                    // TCP port to connect to
+
+            //Recipients
+            $mail->setFrom($email, 'Mailer');
+                             // Set email format to HTML
+            $mail->Subject = 'New message from ' . $name;
+            $mail->Body    = $message;
+
+            $mail->send();
+            $request->getSession()->getFlashBag()->add('info', 'Votre mail a bien été envoyé, nous reviendrons vers vous le plus vite possible');
+            return $this->redirectToRoute('ho_core_homepage');
+        } catch (Exception $e) {
+            $request->getSession()->getFlashBag()->add('info', 'Erreur lors de l\'envoi de votre mail');
+            return $this->redirectToRoute('ho_core_homepage');
+        }
     }
 }
