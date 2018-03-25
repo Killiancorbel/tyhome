@@ -1,5 +1,5 @@
 ho_core_homepage:
-    path:     /home
+    path:     /
     defaults: { _controller: HOCoreBundle:Home:home }
 
 ho_contact_main:
