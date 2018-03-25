@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04033973-21dd-4812-ad26-bcbaf4d9c957" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Images/home_banner.png" afterPath="$PROJECT_DIR$/web/Images/home_banner.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HO/CoreBundle/Resources/views/Home/index.html.twig" afterPath="$PROJECT_DIR$/src/HO/CoreBundle/Resources/views/Home/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/main.css" afterPath="$PROJECT_DIR$/web/assets/css/main.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +27,8 @@
       <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="757">
-              <caret line="63" column="127" lean-forward="false" selection-start-line="63" selection-start-column="127" selection-end-line="63" selection-end-column="127" />
+            <state relative-caret-position="323">
+              <caret line="76" column="100" lean-forward="false" selection-start-line="76" selection-start-column="100" selection-end-line="76" selection-end-column="100" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -41,29 +38,29 @@
                 <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#4;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1521998497144" expanded="false" signature="3098:3113" ph="..." />
-                <marker date="1521998497144" expanded="false" signature="3192:3207" ph="..." />
-                <marker date="1521998497144" expanded="false" signature="3285:3300" ph="..." />
-                <marker date="1521998497144" expanded="false" signature="3381:3396" ph="..." />
-                <marker date="1521998497144" expanded="false" signature="3519:3534" ph="..." />
-                <marker date="1521998497144" expanded="false" signature="3813:3828" ph="..." />
-                <marker date="1521998497144" expanded="false" signature="4366:4401" ph="..." />
+                <marker date="1521998708175" expanded="false" signature="3113:3128" ph="..." />
+                <marker date="1521998708175" expanded="false" signature="3207:3222" ph="..." />
+                <marker date="1521998708175" expanded="false" signature="3300:3315" ph="..." />
+                <marker date="1521998708175" expanded="false" signature="3396:3411" ph="..." />
+                <marker date="1521998708175" expanded="false" signature="3534:3549" ph="..." />
+                <marker date="1521998708175" expanded="false" signature="3828:3843" ph="..." />
+                <marker date="1521998708175" expanded="false" signature="4381:4416" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+            <state relative-caret-position="541">
+              <caret line="134" column="28" lean-forward="false" selection-start-line="134" selection-start-column="28" selection-end-line="134" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HO/CoreBundle/Resources/views/Home/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="573">
@@ -92,9 +89,9 @@
         <option value="$PROJECT_DIR$/src/HO/BlogBundle/Resources/views/Blog/view.html.twig" />
         <option value="$PROJECT_DIR$/src/HO/CoreBundle/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/save_database.sql" />
-        <option value="$PROJECT_DIR$/web/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/HO/CoreBundle/Resources/views/Home/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/web/assets/css/main.css" />
       </list>
     </option>
   </component>
@@ -406,12 +403,12 @@
       <option name="presentableId" value="Default" />
       <updated>1518004880782</updated>
       <workItem from="1518004882115" duration="5495000" />
-      <workItem from="1521946002364" duration="15497000" />
+      <workItem from="1521946002364" duration="15574000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20992000" />
+    <option name="totallyTimeSpent" value="21069000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
@@ -468,13 +465,13 @@
             <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1521998497144" expanded="false" signature="3098:3113" ph="..." />
-            <marker date="1521998497144" expanded="false" signature="3192:3207" ph="..." />
-            <marker date="1521998497144" expanded="false" signature="3285:3300" ph="..." />
-            <marker date="1521998497144" expanded="false" signature="3381:3396" ph="..." />
-            <marker date="1521998497144" expanded="false" signature="3519:3534" ph="..." />
-            <marker date="1521998497144" expanded="false" signature="3813:3828" ph="..." />
-            <marker date="1521998497144" expanded="false" signature="4366:4401" ph="..." />
+            <marker date="1521998708175" expanded="false" signature="3113:3128" ph="..." />
+            <marker date="1521998708175" expanded="false" signature="3207:3222" ph="..." />
+            <marker date="1521998708175" expanded="false" signature="3300:3315" ph="..." />
+            <marker date="1521998708175" expanded="false" signature="3396:3411" ph="..." />
+            <marker date="1521998708175" expanded="false" signature="3534:3549" ph="..." />
+            <marker date="1521998708175" expanded="false" signature="3828:3843" ph="..." />
+            <marker date="1521998708175" expanded="false" signature="4381:4416" ph="..." />
           </folding>
         </state>
       </provider>
@@ -669,18 +666,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/css/main.css">
+    <entry file="file://$PROJECT_DIR$/src/HO/CoreBundle/Resources/views/Home/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="573">
+          <caret line="62" column="47" lean-forward="false" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+          <folding>
+            <element signature="e#1977#2013#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="757">
-          <caret line="63" column="127" lean-forward="false" selection-start-line="63" selection-start-column="127" selection-end-line="63" selection-end-column="127" />
+        <state relative-caret-position="323">
+          <caret line="76" column="100" lean-forward="false" selection-start-line="76" selection-start-column="100" selection-end-line="76" selection-end-column="100" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -690,24 +689,22 @@
             <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1521998497144" expanded="false" signature="3098:3113" ph="..." />
-            <marker date="1521998497144" expanded="false" signature="3192:3207" ph="..." />
-            <marker date="1521998497144" expanded="false" signature="3285:3300" ph="..." />
-            <marker date="1521998497144" expanded="false" signature="3381:3396" ph="..." />
-            <marker date="1521998497144" expanded="false" signature="3519:3534" ph="..." />
-            <marker date="1521998497144" expanded="false" signature="3813:3828" ph="..." />
-            <marker date="1521998497144" expanded="false" signature="4366:4401" ph="..." />
+            <marker date="1521998708175" expanded="false" signature="3113:3128" ph="..." />
+            <marker date="1521998708175" expanded="false" signature="3207:3222" ph="..." />
+            <marker date="1521998708175" expanded="false" signature="3300:3315" ph="..." />
+            <marker date="1521998708175" expanded="false" signature="3396:3411" ph="..." />
+            <marker date="1521998708175" expanded="false" signature="3534:3549" ph="..." />
+            <marker date="1521998708175" expanded="false" signature="3828:3843" ph="..." />
+            <marker date="1521998708175" expanded="false" signature="4381:4416" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HO/CoreBundle/Resources/views/Home/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/web/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="62" column="47" lean-forward="false" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
-          <folding>
-            <element signature="e#1977#2013#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="541">
+          <caret line="134" column="28" lean-forward="false" selection-start-line="134" selection-start-column="28" selection-end-line="134" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
