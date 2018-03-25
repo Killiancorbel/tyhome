@@ -29,6 +29,8 @@ class HomeController extends Controller
 
     public function contactAction(Request $request) {
         $data = $request->request->all();
+        var_dump($data);
+        exit();
         $name = $data['form']['name'];
         $email = $data['form']['email'];
         $message = $data['form']['message'];
