@@ -42,10 +42,7 @@ class HomeController extends Controller
             //Server settings
             $mail->SMTPDebug = 2;                                 // Enable verbose debug output
             $mail->isSMTP();                                      // Set mailer to use SMTP
-            $mail->Host = 'localhost';                            // Specify main and backup SMTP servers
-            $mail->SMTPAuth = true;                               // Enable SMTP authentication
-            $mail->Username = 'root';                             // SMTP username
-            $mail->Password =  null;                           // SMTP password
+            $mail->Host = 'localhost';                         // SMTP password
             $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 587;                                    // TCP port to connect to
 
@@ -59,7 +56,7 @@ class HomeController extends Controller
             $request->getSession()->getFlashBag()->add('info', 'Votre mail a bien été envoyé, nous reviendrons vers vous le plus vite possible');
             return $this->redirectToRoute('ho_core_homepage');
         } catch (Exception $e) {
-            $request->getSession()->getFlashBag()->add('info', 'Erreur lors de l\'envoi de votre mail');
+            $request->getSession()->getFlashBag()->add('info', 'Erreur lors de l\'envoi de votre mail, écrivez nous à rodolphe.dugueperoux@epitech.eu');
             return $this->redirectToRoute('ho_core_homepage');
         }
     }
