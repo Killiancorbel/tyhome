@@ -25,4 +25,8 @@ class HomeController extends Controller
         	'video2' => $video2,
         	'video3' => $video3));
     }
+
+    public function contactAction() {
+
+    }
 }
