@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="04033973-21dd-4812-ad26-bcbaf4d9c957" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HO/CoreBundle/Controller/HomeController.php" afterPath="$PROJECT_DIR$/src/HO/CoreBundle/Controller/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HO/CoreBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/HO/CoreBundle/Resources/config/routing.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HO/CoreBundle/Controller/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
@@ -45,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="532">
-              <caret line="43" column="70" lean-forward="true" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
+              <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -59,13 +57,13 @@
                 <element signature="n#style#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#4;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1522001256026" expanded="false" signature="3202:3217" ph="..." />
-                <marker date="1522001256026" expanded="false" signature="3296:3311" ph="..." />
-                <marker date="1522001256026" expanded="false" signature="3389:3404" ph="..." />
-                <marker date="1522001256026" expanded="false" signature="3485:3500" ph="..." />
-                <marker date="1522001256026" expanded="false" signature="3623:3638" ph="..." />
-                <marker date="1522001256026" expanded="false" signature="3917:3932" ph="..." />
-                <marker date="1522001256026" expanded="false" signature="4470:4505" ph="..." />
+                <marker date="1522001415394" expanded="false" signature="3201:3216" ph="..." />
+                <marker date="1522001415394" expanded="false" signature="3295:3310" ph="..." />
+                <marker date="1522001415394" expanded="false" signature="3388:3403" ph="..." />
+                <marker date="1522001415394" expanded="false" signature="3484:3499" ph="..." />
+                <marker date="1522001415394" expanded="false" signature="3622:3637" ph="..." />
+                <marker date="1522001415394" expanded="false" signature="3916:3931" ph="..." />
+                <marker date="1522001415394" expanded="false" signature="4469:4504" ph="..." />
               </folding>
             </state>
           </provider>
@@ -112,8 +110,8 @@
         <option value="$PROJECT_DIR$/src/HO/CoreBundle/Resources/views/Home/index.html.twig" />
         <option value="$PROJECT_DIR$/web/assets/css/main.css" />
         <option value="$PROJECT_DIR$/src/HO/CoreBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/HO/CoreBundle/Controller/HomeController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
       </list>
     </option>
   </component>
@@ -425,12 +423,12 @@
       <option name="presentableId" value="Default" />
       <updated>1518004880782</updated>
       <workItem from="1518004882115" duration="5495000" />
-      <workItem from="1521946002364" duration="17128000" />
+      <workItem from="1521946002364" duration="17216000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22623000" />
+    <option name="totallyTimeSpent" value="22711000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
@@ -487,13 +485,13 @@
             <element signature="n#style#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1522001256026" expanded="false" signature="3202:3217" ph="..." />
-            <marker date="1522001256026" expanded="false" signature="3296:3311" ph="..." />
-            <marker date="1522001256026" expanded="false" signature="3389:3404" ph="..." />
-            <marker date="1522001256026" expanded="false" signature="3485:3500" ph="..." />
-            <marker date="1522001256026" expanded="false" signature="3623:3638" ph="..." />
-            <marker date="1522001256026" expanded="false" signature="3917:3932" ph="..." />
-            <marker date="1522001256026" expanded="false" signature="4470:4505" ph="..." />
+            <marker date="1522001415394" expanded="false" signature="3201:3216" ph="..." />
+            <marker date="1522001415394" expanded="false" signature="3295:3310" ph="..." />
+            <marker date="1522001415394" expanded="false" signature="3388:3403" ph="..." />
+            <marker date="1522001415394" expanded="false" signature="3484:3499" ph="..." />
+            <marker date="1522001415394" expanded="false" signature="3622:3637" ph="..." />
+            <marker date="1522001415394" expanded="false" signature="3916:3931" ph="..." />
+            <marker date="1522001415394" expanded="false" signature="4469:4504" ph="..." />
           </folding>
         </state>
       </provider>
@@ -690,30 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="43" column="70" lean-forward="true" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1522001256026" expanded="false" signature="3202:3217" ph="..." />
-            <marker date="1522001256026" expanded="false" signature="3296:3311" ph="..." />
-            <marker date="1522001256026" expanded="false" signature="3389:3404" ph="..." />
-            <marker date="1522001256026" expanded="false" signature="3485:3500" ph="..." />
-            <marker date="1522001256026" expanded="false" signature="3623:3638" ph="..." />
-            <marker date="1522001256026" expanded="false" signature="3917:3932" ph="..." />
-            <marker date="1522001256026" expanded="false" signature="4470:4505" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/HO/CoreBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -735,6 +709,30 @@
         <state relative-caret-position="465">
           <caret line="35" column="91" lean-forward="true" selection-start-line="35" selection-start-column="91" selection-end-line="35" selection-end-column="91" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#form#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1522001415394" expanded="false" signature="3201:3216" ph="..." />
+            <marker date="1522001415394" expanded="false" signature="3295:3310" ph="..." />
+            <marker date="1522001415394" expanded="false" signature="3388:3403" ph="..." />
+            <marker date="1522001415394" expanded="false" signature="3484:3499" ph="..." />
+            <marker date="1522001415394" expanded="false" signature="3622:3637" ph="..." />
+            <marker date="1522001415394" expanded="false" signature="3916:3931" ph="..." />
+            <marker date="1522001415394" expanded="false" signature="4469:4504" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
