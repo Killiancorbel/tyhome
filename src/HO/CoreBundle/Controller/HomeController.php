@@ -29,11 +29,9 @@ class HomeController extends Controller
 
     public function contactAction(Request $request) {
         $data = $request->request->all();
-        var_dump($data);
-        exit();
-        $name = $data['form']['name'];
-        $email = $data['form']['email'];
-        $message = $data['form']['message'];
+        $name = $data['name'];
+        $email = $data['email'];
+        $message = $data['message'];
 
         mail('killian.corbel@gmail.com', 'Message de ' . $name . ' - ' . $email, $message);
         $request->getSession()->getFlashBag()->add('info', 'Votre mail a bien été envoyé, nous reviendrons vers vous le plus vite possible');
