@@ -18,7 +18,7 @@
         <div class="row">
             {% for file in files %}
                 <div class="col-md-12" style="margin-bottom: 20px;">
-                    <a href="{{ file.webPath }}">{{ file.webPath }}</a>
+                    <a href="{{ file.downloadPath }}">{{ file.webPath }}</a>
                 </div>
             {% endfor %}
             {{ form(form) }}
