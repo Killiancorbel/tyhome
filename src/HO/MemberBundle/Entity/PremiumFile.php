@@ -211,6 +211,10 @@ class PremiumFile
         return $this->getUploadDir().'/'.$this->getId().'.'.$this->getUrl();
     }
 
+    public function getDownloadPath() {
+        return $this->getUploadRootDir().'/'.$this->getId().'.'.$this->getUrl();
+    }
+
     /**
      * Set user
      *
