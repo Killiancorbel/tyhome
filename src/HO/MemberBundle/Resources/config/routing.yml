@@ -1,3 +1,11 @@
 ho_member_homepage:
     path:     /
     defaults: { _controller: HOMemberBundle:Member:index }
+
+ho_member_create_premium:
+    path:    /create-premium
+    defaults: { _controller: HOMemberBundle:Member:createPremium }
+
+ho_member_upload_file:
+    path:    /upload-file
+    defaults: { _controller: HOMemberBundle:Member:upload }
