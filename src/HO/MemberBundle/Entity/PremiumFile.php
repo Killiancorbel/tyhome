@@ -42,7 +42,7 @@ class PremiumFile
     private $tempFilename;
 
     /**
-     * @ORM\OneToOne(targetEntity="HO\UserBundle\Entity\User")
+     * @ORM\ManyToOne(targetEntity="HO\UserBundle\Entity\User")
      */
     private $user;
 
