@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04033973-21dd-4812-ad26-bcbaf4d9c957" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HO/MemberBundle/Entity/PremiumFile.php" afterPath="$PROJECT_DIR$/src/HO/MemberBundle/Entity/PremiumFile.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HO/MemberBundle/Resources/views/Files/upload.html.twig" afterPath="$PROJECT_DIR$/src/HO/MemberBundle/Resources/views/Files/upload.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/src/HO/MemberBundle/Resources/views/Files/upload.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" column="49" lean-forward="false" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+              <caret line="20" column="72" lean-forward="true" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
               <folding>
                 <element signature="e#179#225#0#HTML" expanded="true" />
                 <element signature="e#597#625#0#HTML" expanded="true" />
@@ -470,12 +469,12 @@
       <workItem from="1518004882115" duration="5495000" />
       <workItem from="1521946002364" duration="19959000" />
       <workItem from="1522772983972" duration="649000" />
-      <workItem from="1522818089996" duration="2081000" />
+      <workItem from="1522818089996" duration="2239000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28184000" />
+    <option name="totallyTimeSpent" value="28342000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
@@ -914,7 +913,7 @@
     <entry file="file://$PROJECT_DIR$/src/HO/MemberBundle/Resources/views/Files/upload.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="49" lean-forward="false" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+          <caret line="20" column="72" lean-forward="true" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
           <folding>
             <element signature="e#179#225#0#HTML" expanded="true" />
             <element signature="e#597#625#0#HTML" expanded="true" />
