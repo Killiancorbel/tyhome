@@ -31,7 +31,7 @@ security:
         always_use_default_target_path: true
       logout:
         path:       logout
-        target:     /home
+        target:     /
 
   access_control:
     #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
