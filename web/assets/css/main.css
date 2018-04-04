@@ -133,3 +133,8 @@ video {
     background: url("../../Images/home_banner.png") no-repeat;
     background-size: 100% 200px;
 }
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
