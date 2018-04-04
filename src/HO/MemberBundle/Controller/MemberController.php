@@ -38,7 +38,8 @@ class MemberController extends Controller
             $em->flush();
         }
         return $this->render('HOMemberBundle:Files:upload.html.twig', array(
-            'form' => $form->createView()
+            'form' => $form->createView(),
+            'files' =>  $files
         ));
     }
 
