@@ -6,6 +6,7 @@ security:
     HO\UserBundle\Entity\User: plaintext
 
   role_hierarchy:
+    ROLE_PREMIUM:     ROLE_USER
     ROLE_ADMIN:       ROLE_USER
     ROLE_SUPER_ADMIN: [ROLE_USER, ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
 

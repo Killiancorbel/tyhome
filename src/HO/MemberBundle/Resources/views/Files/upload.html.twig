@@ -1,0 +1,32 @@
+{# src/HO/MemberBundle/Resources/views/Files/index.html.twig #}
+
+{% extends "HOMemberBundle::layout.html.twig" %}
+
+{% block homember_body %}
+
+    <div class="container-fullwidth" style="font-family: Verdana; font-size: 16px;">
+        <div class="page-header">
+            <h1>Files</h1>
+        </div>
+
+        {% for message in app.session.flashbag.get('info') %}
+            <div class="alert alert-success" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+        <div class="row">
+            {% for file in files %}
+                <div class="col-md-12" style="margin-bottom: 20px;">
+                    <a href="{{ file.webPath }}">{{ file.webPath }}</a>
+                </div>
+            {% endfor %}
+            {{ form(form) }}
+        </div>
+
+
+
+    </div>
+
+
+{% endblock %}
