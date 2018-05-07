@@ -72,13 +72,11 @@ class ApiController extends Controller
         $files = $em->getRepository(PremiumFile::class)->findBy(array('user' => $this->getUser()));
 
         $res = [];
-        $appPath = $this->container->getParameter('kernel.root_dir');
-        $webPath = realpath($appPath . '/../web/uploads');
         foreach ($files as $file) {
             $temp = [];
             $temp['id'] = $file->getId();
             $temp['name'] = $file->getAlt();
-            $temp['url'] = $webPath . "/" . $file->getId() . "." . $file->getUrl();
+            $temp['url'] =  "http://nootty.fr/uploads/" . $file->getId() . "." . $file->getUrl();
             $res[] = $temp;
         }
         $data = $this->get('jms_serializer')->serialize($res, 'json');
