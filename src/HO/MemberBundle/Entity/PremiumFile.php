@@ -10,7 +10,6 @@ use Symfony\Component\HttpFoundation\File\UploadedFile;
  *
  * @ORM\Table(name="premium_file")
  * @ORM\Entity(repositoryClass="HO\MemberBundle\Repository\PremiumFileRepository")
- * @ORM\HasLifecycleCallbacks()
  */
 class PremiumFile
 {
@@ -125,12 +124,7 @@ class PremiumFile
         return $this->alt;
     }
 
-    /**
-     * @ORM\PrePersist()
-     * @ORM\PreUpdate()
-     */
-    public function preUpload()
-    {
+    public function preUpload() {
         // Si jamais il n'y a pas de fichier (champ facultatif), on ne fait rien
         if (null === $this->file) {
             return;
@@ -145,16 +139,8 @@ class PremiumFile
         $this->updatedAt = new \DateTimeImmutable();
     }
 
-    /**
-     * @ORM\PostPersist()
-     * @ORM\PostUpdate()
-     */
     public function upload()
     {
-        // Si jamais il n'y a pas de fichier (champ facultatif), on ne fait rien
-        if (null === $this->file) {
-            return;
-        }
 
         // Si on avait un ancien fichier, on le supprime
         if (null !== $this->tempFilename) {
@@ -172,24 +158,19 @@ class PremiumFile
         $this->updatedAt = new \DateTimeImmutable();
     }
 
-    /**
-     * @ORM\PreRemove()
-     */
-    public function preRemoveUpload()
-    {
+    public function remove() {
         // On sauvegarde temporairement le nom du fichier, car il dépend de l'id
-        $this->tempFilename = $this->getUploadRootDir().'/'.$this->id.'.'.$this->url;
-    }
 
-    /**
-     * @ORM\PostRemove()
-     */
-    public function removeUpload()
-    {
+        $this->tempFilename = $this->getUploadRootDir().'/'.$this->id.'.'.$this->url;
+
         // En PostRemove, on n'a pas accès à l'id, on utilise notre nom sauvegardé
+
         if (file_exists($this->tempFilename)) {
+
             // On supprime le fichier
+
             unlink($this->tempFilename);
+
         }
     }
 
