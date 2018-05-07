@@ -50,6 +50,13 @@ class User implements UserInterface
      */
     private $roles = array();
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="token", type="string", length=255)
+     */
+    private $token;
+
 
     /**
      * Get id
@@ -159,6 +166,13 @@ class User implements UserInterface
 
     public function eraseCredentials()
     {
+    }
+
+    public function getToken() {
+        return $this->token;
+    }
+    public function setToken($token) {
+        $this->token = $token;
     }
 }
 

@@ -23,7 +23,10 @@
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "^2.0",
         "twig/twig": "^1.0||^2.0",
-        "phpmailer/phpmailer": "^6.0"
+        "phpmailer/phpmailer": "^6.0",
+        "jms/serializer-bundle": "^2.3",
+        "friendsofsymfony/rest-bundle": "^2.3",
+        "lexik/jwt-authentication-bundle": "^2.4"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",

@@ -34,8 +34,10 @@ class MemberController extends Controller
         $form = $this->createForm(PremiumFileType::class, $premiumFile);
         $files = $em->getRepository(PremiumFile::class)->findBy(array('user' => $this->getUser()));
         if ($request->isMethod('POST') && $form->handleRequest($request)->isValid()) {
+            $premiumFile->preUpload();
             $em->persist($premiumFile);
             $em->flush();
+            $premiumFile->upload();
         }
         return $this->render('HOMemberBundle:Files:upload.html.twig', array(
             'form' => $form->createView(),
@@ -52,5 +54,6 @@ class MemberController extends Controller
         $em = $this->getDoctrine()->getManager();
         $em->persist($user);
         $em->flush();
+        return new Response("", Response::HTTP_OK);
     }
 }

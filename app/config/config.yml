@@ -72,3 +72,20 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  null
     spool:     { type: memory }
+
+sensio_framework_extra:
+    view: { annotations: false }
+
+fos_rest:
+    body_converter:
+        enabled: true
+    view:
+        formats: { json: true, xml: false, rss: false }
+    serializer:
+        serialize_null: true
+
+lexik_jwt_authentication:
+    private_key_path: %kernel.root_dir%/../var/jwt/private.pem
+    public_key_path:  %kernel.root_dir%/../var/jwt/public.pem
+    pass_phrase:      %jwt_key_pass_phrase%
+    token_ttl: 3600

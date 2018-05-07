@@ -7,7 +7,7 @@ security:
 
   role_hierarchy:
     ROLE_PREMIUM:     ROLE_USER
-    ROLE_ADMIN:       ROLE_USER
+    ROLE_ADMIN:       [ROLE_USER, ROLE_PREMIUM, ROLE_ALLOWED_TO_SWITCH]
     ROLE_SUPER_ADMIN: [ROLE_USER, ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
 
   providers:
@@ -17,6 +17,13 @@ security:
         property: username
 
   firewalls:
+    api:
+      pattern: ^/api
+      anonymous: true
+      stateless: true
+      guard:
+        authenticators:
+          - 'jwt_token_authenticator'
     dev:
       pattern: ^/(_(profiler|wdt)|css|images|js)/
       security: false
