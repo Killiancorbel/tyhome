@@ -5,3 +5,18 @@ ho_core_homepage:
 ho_contact_main:
     path:    /contact
     defaults: { _controller: HOCoreBundle:Home:contact }
+
+ho_api_list_files:
+    path:    /api/files
+    defaults:  { _controller: HOCoreBundle:Api:list }
+    methods: [GET]
+
+ho_api_create_file:
+    path:    /api/files
+    defaults:  { _controller: HOCoreBundle:Api:create }
+    methods:  [POST]
+
+ho_api_login:
+    path:    /api/login
+    defaults: { _controller: HOCoreBundle:Api:newToken }
+    methods: [POST]
