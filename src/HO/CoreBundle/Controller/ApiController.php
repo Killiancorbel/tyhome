@@ -76,7 +76,7 @@ class ApiController extends Controller
             $temp = [];
             $temp['id'] = $file->getId();
             $temp['name'] = $file->getAlt();
-            $temp['url'] =  "http://nootty.fr/uploads/" . $file->getId() . "." . $file->getUrl();
+            $temp['url'] =  "http://nootty.fr/uploads/img/" . $file->getId() . "." . $file->getUrl();
             $res[] = $temp;
         }
         $data = $this->get('jms_serializer')->serialize($res, 'json');
