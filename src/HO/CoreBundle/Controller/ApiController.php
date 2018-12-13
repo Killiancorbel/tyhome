@@ -74,6 +74,9 @@ class ApiController extends Controller
 
     public function listAction()
     {
+        if ($this->getUser() == null) {
+            return new Response("is null");
+        }
         $this->denyAccessUnlessGranted('ROLE_PREMIUM');
         $em = $this->getDoctrine()->getManager();
         $files = $em->getRepository(PremiumFile::class)->findBy(array('user' => $this->getUser()));
