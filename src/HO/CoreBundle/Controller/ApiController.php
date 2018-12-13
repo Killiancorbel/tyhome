@@ -25,6 +25,10 @@ class ApiController extends Controller
             throw new BadCredentialsException();
         }
 
+        $jwtManager = $this->container->get('lexik_jwt_authentication.jwt_manager');
+
+        return new JsonResponse(['token' => $jwtManager->create($user)]);
+
         $token = $this->get('lexik_jwt_authentication.encoder.default')->encode(array(
             'username' => $user->getUsername(),
             'exp' => time() + 3600
@@ -70,7 +74,6 @@ class ApiController extends Controller
 
     public function listAction()
     {
-        return $this->getUser();
         $this->denyAccessUnlessGranted('ROLE_PREMIUM');
         $em = $this->getDoctrine()->getManager();
         $files = $em->getRepository(PremiumFile::class)->findBy(array('user' => $this->getUser()));
