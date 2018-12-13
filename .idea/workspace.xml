@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04033973-21dd-4812-ad26-bcbaf4d9c957" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/web/app_dev.php" beforeDir="false" afterPath="$PROJECT_DIR$/web/app_dev.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HO/UserBundle/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/HO/UserBundle/Entity/User.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,26 +26,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="2" />
+          <entry key="php" value="3" />
           <entry key="twig" value="1" />
           <entry key="yml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="2" />
+          <entry key="PHP" value="3" />
           <entry key="Twig" value="1" />
           <entry key="YAML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="166" />
+          <entry key="php" value="181" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="166" />
+          <entry key="PHP" value="181" />
         </counts>
       </usages-collector>
     </session>
@@ -85,11 +85,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/app_dev.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
               <caret line="14" column="77" selection-start-line="14" selection-start-column="77" selection-end-line="14" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/HO/UserBundle/Entity/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="579">
+              <caret line="55" column="73" selection-start-line="55" selection-start-column="73" selection-end-line="55" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -124,7 +133,6 @@
         <option value="$PROJECT_DIR$/src/HO/MemberBundle/Form/PremiumFileType.php" />
         <option value="$PROJECT_DIR$/src/HO/MemberBundle/Resources/views/Files/upload.html.twig" />
         <option value="$PROJECT_DIR$/src/HO/MemberBundle/Entity/InputFile.php" />
-        <option value="$PROJECT_DIR$/src/HO/UserBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/HO/CoreBundle/Security/ApiKeyUserProvider.php" />
         <option value="$PROJECT_DIR$/src/HO/CoreBundle/Security/ApiKeyAuthenticator.php" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
@@ -139,6 +147,7 @@
         <option value="$PROJECT_DIR$/src/HO/CoreBundle/Controller/ApiController.php" />
         <option value="$PROJECT_DIR$/src/HO/MemberBundle/Controller/MemberController.php" />
         <option value="$PROJECT_DIR$/web/app_dev.php" />
+        <option value="$PROJECT_DIR$/src/HO/UserBundle/Entity/User.php" />
       </list>
     </option>
   </component>
@@ -343,6 +352,21 @@
             <path>
               <item name="tyhome" type="b2602c69:ProjectViewProjectNode" />
               <item name="tyhome" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="HO" type="462c0819:PsiDirectoryNode" />
+              <item name="UserBundle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tyhome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tyhome" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="HO" type="462c0819:PsiDirectoryNode" />
+              <item name="UserBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tyhome" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tyhome" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -386,12 +410,12 @@
       <workItem from="1525666028980" duration="15083000" />
       <workItem from="1538040599389" duration="639000" />
       <workItem from="1538138737002" duration="2661000" />
-      <workItem from="1544694202283" duration="399000" />
+      <workItem from="1544694202283" duration="664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50878000" />
+    <option name="totallyTimeSpent" value="51143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
@@ -553,13 +577,6 @@
         <state relative-caret-position="-533" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HO/UserBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2610">
-          <caret line="174" column="30" selection-start-line="174" selection-start-column="30" selection-end-line="174" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/TokenInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -700,6 +717,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="14" column="77" selection-start-line="14" selection-start-column="77" selection-end-line="14" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HO/UserBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="55" column="73" selection-start-line="55" selection-start-column="73" selection-end-line="55" selection-end-column="73" />
         </state>
       </provider>
     </entry>
