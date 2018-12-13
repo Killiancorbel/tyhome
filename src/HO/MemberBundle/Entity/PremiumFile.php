@@ -41,6 +41,13 @@ class PremiumFile
     private $tempFilename;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="type", type="string", length=255, nullable=true)
+     */
+    private $type;
+
+    /**
      * @ORM\ManyToOne(targetEntity="HO\UserBundle\Entity\User")
      */
     private $user;
@@ -218,5 +225,21 @@ class PremiumFile
     public function getUser()
     {
         return $this->user;
+    }
+
+    /**
+     * @return string
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param string $type
+     */
+    public function setType($type)
+    {
+        $this->type = $type;
     }
 }

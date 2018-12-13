@@ -48,8 +48,8 @@ class MemberController extends Controller
     public function createPremiumAction() {
         $user = new User();
         $user->setSalt("");
-        $user->setPassword("azerty");
-        $user->setUsername("thekten@gmail.com");
+        $user->setPassword("asdasd");
+        $user->setUsername("admin@gmail.com");
         $user->setRoles(array("ROLE_PREMIUM"));
         $em = $this->getDoctrine()->getManager();
         $em->persist($user);

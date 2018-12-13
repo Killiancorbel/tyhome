@@ -52,10 +52,13 @@ class ApiController extends Controller
         $em = $this->getDoctrine()->getManager();
         $data = $request->request->all();
         $file = $request->files->get('file');
+        $type = $request->request->get('type');
         if ($file) {
             $newFile = new PremiumFile();
             $newFile->setFile($file);
             $newFile->preUpload();
+            $newFile->setUser($this->getUser());
+            $newFile->setType($type);
             $em->persist($newFile);
             $em->flush();
             $newFile->upload();
@@ -77,6 +80,7 @@ class ApiController extends Controller
             $temp['id'] = $file->getId();
             $temp['name'] = $file->getAlt();
             $temp['url'] =  "http://nootty.fr/uploads/img/" . $file->getId() . "." . $file->getUrl();
+            $temp['type'] = $file->getType();
             $res[] = $temp;
         }
         $data = $this->get('jms_serializer')->serialize($res, 'json');
